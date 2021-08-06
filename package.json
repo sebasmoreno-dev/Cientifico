@@ -8,7 +8,7 @@
     "start": "webpack server --open --mode development"
   },
   "keywords": [
-    "JavaScript"
+    "JavaScript","vanilla"
   ],
   "author": "Sebastian Moreno <sebastian.moreno.contacto@gmail.com>",
   "license": "MIT",

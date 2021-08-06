@@ -2,19 +2,22 @@ const Header = () => {
     const view = `
     <div class="Header-main">
         <div class="Header-logo">
-            <h1>
-                <a href="/">
-                100tifi.co
+                <a href="#">
+                    <img src="src/images/rm-logo.png">
                 </a>
-            </h1>
         </div>
         <div class="Header-nav">
-            <a href="#/about/">
-                About
-            </a>
+        <div class="change">
+        <span class="toogle-text" id="texto-toogle"></span>
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <span class="slider round"></span>
+        </label>
         </div>
-    </div>`
-    return view;
-}
+        </div>
+    </div>
+    `;
+    return view
+};
 
-export default Header;
+export default Header
