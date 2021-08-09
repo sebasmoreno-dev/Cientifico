@@ -25,7 +25,7 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
+                    { loader: MiniCssExtractPlugin.loader},
                     "css-loader", "sass-loader"]
             }
         ]
@@ -42,12 +42,12 @@ module.exports = {
             filename: '[name].css'
         }),
 
-        new CopyWebpackPlugin({
+        /* new CopyWebpackPlugin({
             patterns:[{
                 from: './src/styles/styles.css',
                 to: ''
             }],
-        }),
+        }), */
         new CopyWebpackPlugin({
             patterns:[{
                 from: './src/images',
